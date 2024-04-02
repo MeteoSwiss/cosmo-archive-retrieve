@@ -17,7 +17,6 @@ import xarray as xr
 from functools import partial
 from tqdm import tqdm
 
-from nwp_archive_extract import constants
 import tempfile
 from pathlib import Path
 import math
