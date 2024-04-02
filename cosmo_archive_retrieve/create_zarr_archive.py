@@ -105,12 +105,12 @@ class Process(mp.Process):
 def compute_first_date_avail(tar_file_paths):
     return datetime.strptime(os.path.basename(tar_file_paths[0]).replace('.tar',''), '%Y%m%d')
 
-def process_tar_file(leadtime, tar_file_paths, num_tot_leadtimes, hour_start, tmpdir):
+def process_tar_file(leadtime, tar_file_paths, num_tot_leadtimes, hour_start, outdir, tmp_base_dir):
 
     if leadtime > num_tot_leadtimes: 
         return
     
-    with tempfile.TemporaryDirectory(prefix='/scratch/cosuna/') as tarextract_dir:
+    with tempfile.TemporaryDirectory(prefix=tmp_base_dir) as tarextract_dir:
 
         ifile_start = math.floor(leadtime/24)
         first_hour = leadtime%24
@@ -157,7 +157,7 @@ def process_tar_file(leadtime, tar_file_paths, num_tot_leadtimes, hour_start, tm
             anads = anads.rename({"valid_time":"time"})  
             fgds = fgds.rename({"valid_time":"time"})  
             
-            serialize_dataset(fgds.merge(anads), leadtime + first_leadtime_of_day + index, tmpdir)
+            serialize_dataset(fgds.merge(anads), leadtime + first_leadtime_of_day + index, outdir)
         
 def load_data(config: dict) -> None:
     """Load weather data from archive and store it in a Zarr archive."""
@@ -194,11 +194,12 @@ def load_data(config: dict) -> None:
 
     logger.info(f'Starting from hour :{hour_start}')   
 
-    with tempfile.TemporaryDirectory(prefix='/scratch/cosuna/') as tmpdir:
+    with tempfile.TemporaryDirectory(prefix=config['tempdir']) as tmpdir:
         data_collector = Process(target=collect_datasets, args=(tmpdir, hour_start,num_tot_leadtimes, config))
         data_collector.start()
 
-        tar_file_call = partial(process_tar_file, tar_file_paths=tar_file_paths, num_tot_leadtimes=num_tot_leadtimes, hour_start=hour_start, tmpdir=tmpdir)
+        tar_file_call = partial(process_tar_file, tar_file_paths=tar_file_paths, num_tot_leadtimes=num_tot_leadtimes, hour_start=hour_start, 
+                                outdir=tmpdir, tmp_base_dir = config['tempdir'])
         
         # iterate over all the leadtimes (hours) in the archive day by day
         for x in tqdm(range(math.floor(hour_start/24)*24, num_tot_leadtimes+1, 24*n_pool)):
@@ -287,14 +288,17 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Create a zarr archive.')
     parser.add_argument('-d','--debug', action='store_true')
     parser.add_argument('-n',  type=int, default=1)
+    parser.add_argument('-t','--tempdir', type=str, default=os.path.join('scratch/',os.environ['USER']+'/'))
+    parser.add_argument('-o', type=str, default=os.path.join("/scratch", os.environ['USER'], '/neural-lam/zarr/cosmo_ml_data.zarr'))
     
     args = parser.parse_args()
 
     data_config = {
         "data_path": "/store/archive/mch/msopr/owm/KENDA",
         "train_years": ["15", "16", "17", "18", "19", "20"],
-        "zarr_path": "/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr",
+        "zarr_path": args.o,
         "n_pool": args.n,
+        "tempdir": args.tempdir,
         "compressor": numcodecs.Blosc(
             cname='lz4',
             clevel=7,
