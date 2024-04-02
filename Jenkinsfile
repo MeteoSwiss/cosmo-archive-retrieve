@@ -52,13 +52,6 @@ pipeline {
 
         stage('Test') {
             parallel {
-                stage('3.9') {
-                    steps {
-                        script {
-                            runWithPodman.poetryPytest '3.9', false, false
-                        }
-                    }
-                }
                 stage('3.10') {
                     steps {
                         script {
