@@ -11,6 +11,7 @@ Setup virtual environment
     $ cd cosmo-archive-retrieve
     $ conda env create -f environment.yml
     $ conda activate cosmo-archive-retrieve
+    $ poetry run pre-install
     $ poetry install
 
 

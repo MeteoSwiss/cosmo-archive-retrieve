@@ -26,6 +26,8 @@ from idpi.operators.destagger import destagger
 from idpi.operators.relhum import relhum
 from idpi.grib_decoder import GribReader
 
+from idpi import metadata
+
 logger = logging.getLogger(__name__)
 
 def append_or_create_zarr(data_out: xr.Dataset, config: dict, logger) -> None:
@@ -160,7 +162,7 @@ def process_tar_file(leadtime, tar_file_paths, num_tot_leadtimes, hour_start, tm
 def load_data(config: dict) -> None:
     """Load weather data from archive and store it in a Zarr archive."""
 
-    n_pool=10
+    n_pool=config["n_pool"]
     tar_file_paths = []
     regex = re.compile(".*\.list")
     for year in data_config["train_years"]:
@@ -242,15 +244,18 @@ def process_ana_file(full_path):
             ["T", "U_10M", "V_10M", "U", "V", "PS", "T_2M", "P", "QV", "TQV", "PMSL", "HHL", "HSURF"],
         )
 
+        metadata.set_origin_xy(ds, ref_param="HHL")
+
         pdset = {}
         for name, var in ds.items():
             
-            for dim, offset in var.origin.items():
-                if offset != 0.0:
+            for dim in ['x','y','z']:
+                origind = 'origin_'+dim
+                if origind in var.attrs and var.attrs[origind] != 0.0:
                     var = destagger(var, dim)
-                    var.origin[dim] = 0.0
-                if name == "HHL":
-                    name = "HFL"
+                    var.attrs[origind] = 0.0
+            if name == "HHL":
+                name = "HFL"
 
             pdset[name] = var
         
@@ -281,6 +286,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Create a zarr archive.')
     parser.add_argument('-d','--debug', action='store_true')
+    parser.add_argument('-n',  type=int, default=1)
     
     args = parser.parse_args()
 
@@ -288,6 +294,7 @@ if __name__ == "__main__":
         "data_path": "/store/archive/mch/msopr/owm/KENDA",
         "train_years": ["15", "16", "17", "18", "19", "20"],
         "zarr_path": "/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr",
+        "n_pool": args.n,
         "compressor": numcodecs.Blosc(
             cname='lz4',
             clevel=7,
