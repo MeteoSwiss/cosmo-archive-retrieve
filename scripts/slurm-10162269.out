@@ -19993,3 +19993,262 @@ INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U'
 INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2487.pckl
 INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
 INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2488.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031016
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031016
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2488.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2488.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2489.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031017
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031017
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2489.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2489.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2490.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031018
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031018
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2490.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2490.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2491.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031019
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031019
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2491.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2491.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2492.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031020
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031020
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2492.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2492.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2493.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031021
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031021
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2493.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2493.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2494.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031022
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031022
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2494.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2494.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2495.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031023
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031023
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2495.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2495.pckl
+  4%|▍         | 7/177 [2:55:36<75:37:51, 1601.60s/it]INFO:__main__:Extracting leadtime: 2544, date: 2016-03-13 00:00:00
+INFO:__main__:Copying from archive (/scratch/cosuna/sdnmiz20) to /scratch/cosuna/sdnmiz20/20160313.tar
+INFO:__main__:Extracting leadtime: 2568, date: 2016-03-14 00:00:00
+INFO:__main__:Copying from archive (/scratch/cosuna/nar8bk3w) to /scratch/cosuna/nar8bk3w/20160314.tar
+INFO:__main__:Extracting leadtime: 2592, date: 2016-03-15 00:00:00
+INFO:__main__:Copying from archive (/scratch/cosuna/iuasfjxo) to /scratch/cosuna/iuasfjxo/20160315.tar
+INFO:__main__:Extracting leadtime: 2616, date: 2016-03-16 00:00:00
+INFO:__main__:Copying from archive (/scratch/cosuna/4oap3_hx) to /scratch/cosuna/4oap3_hx/20160316.tar
+INFO:__main__:Extracting leadtime: 2640, date: 2016-03-17 00:00:00
+INFO:__main__:Extracting leadtime: 2664, date: 2016-03-18 00:00:00
+INFO:__main__:Copying from archive (/scratch/cosuna/2fmksf78) to /scratch/cosuna/2fmksf78/20160317.tar
+INFO:__main__:Extracting leadtime: 2688, date: 2016-03-19 00:00:00
+INFO:__main__:Copying from archive (/scratch/cosuna/r3lyhvbs) to /scratch/cosuna/r3lyhvbs/20160318.tar
+INFO:__main__:Copying from archive (/scratch/cosuna/3h88qasd) to /scratch/cosuna/3h88qasd/20160319.tar
+INFO:__main__:Extracting leadtime: 2712, date: 2016-03-20 00:00:00
+INFO:__main__:Extracting leadtime: 2736, date: 2016-03-21 00:00:00
+INFO:__main__:Extracting leadtime: 2760, date: 2016-03-22 00:00:00
+INFO:__main__:Copying from archive (/scratch/cosuna/z0mqyyds) to /scratch/cosuna/z0mqyyds/20160320.tar
+INFO:__main__:Copying from archive (/scratch/cosuna/igketbgh) to /scratch/cosuna/igketbgh/20160322.tar
+INFO:__main__:Copying from archive (/scratch/cosuna/dej8dj5s) to /scratch/cosuna/dej8dj5s/20160321.tar
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2496.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2496.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2497.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2497.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2498.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2498.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2499.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2499.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2500.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2500.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2501.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2501.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2502.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2502.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2503.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2503.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2504.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2504.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2505.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2505.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2506.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2506.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2507.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2507.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2508.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2508.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2509.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2509.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2510.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2510.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2511.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2511.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2512.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2512.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2513.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2513.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2514.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2514.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2515.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2515.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2516.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2516.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2517.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2517.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2518.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2518.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2519.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2519.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2520.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2520.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2521.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2521.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2522.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2522.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2523.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2523.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2524.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2524.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2525.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2525.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2526.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2526.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2527.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2527.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2528.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2528.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2529.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2529.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2530.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2530.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2531.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2531.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2532.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2532.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2533.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2533.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2534.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2534.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2535.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2535.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2536.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2536.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2537.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2537.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2538.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2538.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2539.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2539.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2540.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2540.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2541.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2541.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2542.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2542.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2543.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2543.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2544.pckl

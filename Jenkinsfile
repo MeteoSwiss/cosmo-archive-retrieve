@@ -193,5 +193,9 @@ pipeline {
             echo 'Build succeeded'
             updateGitlabCommitStatus name: 'Build', state: 'success'
         }
+        always{
+            echo 'Cleaning up workspace'
+            deleteDir()
+        }
     }
 }
