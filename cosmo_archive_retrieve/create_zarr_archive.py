@@ -30,9 +30,11 @@ from idpi import metadata
 logger = logging.getLogger(__name__)
 
 
-def append_or_create_zarr(data_out: xr.Dataset, config: dict, logger: logging.Logger) -> None:
+def append_or_create_zarr(
+    data_out: xr.Dataset, config: dict, logger: logging.Logger
+) -> None:
     """Append data to an existing Zarr archive or create a new one.
-    
+
     Parameters
     ----------
     data_out: xr.Dataset
@@ -64,13 +66,13 @@ def append_or_create_zarr(data_out: xr.Dataset, config: dict, logger: logging.Lo
 
 def find_last_checkpoint(data_path: str):
     """Find the last leadtime that was generated in the zarr store.
-    
+
     Parameters
     ----------
     data_path: str
         path to zarr data store
     """
-    
+
     try:
         ds = xr.open_zarr(data_path)
         checkpoint = ds.time.values[-1]
@@ -80,10 +82,10 @@ def find_last_checkpoint(data_path: str):
         return None
 
 
-def collect_datasets(dir: str, start: int, end: int, config: dict[str,str]):
-    """"Collects pickle datasets in order and archives
+def collect_datasets(dir: str, start: int, end: int, config: dict[str, str]):
+    """ "Collects pickle datasets in order and archives
     them into a single zarr store.
-    
+
     Parameters
     ----------
     dir: str
@@ -91,8 +93,8 @@ def collect_datasets(dir: str, start: int, end: int, config: dict[str,str]):
     start: int
         first leadtime generated.
     end: int
-        last leadtime generated. 
-    config: 
+        last leadtime generated.
+    config:
         configuration of the application.
     """
 
@@ -135,26 +137,36 @@ class Process(mp.Process):
         return self._exception
 
 
-def compute_first_date_avail(tar_file_paths):
-    """"Compute the first date available in the list of tar files, 
+def compute_first_date_avail(tar_file_paths: tuple[str]):
+    """ "Compute the first date available in the list of tar files,
     extracted from filename pattern.
+
+    Parameters
+    ----------
+    tar_file_paths: tuple[str]
+        list of filenames of tar files
     """
-    
+
     return datetime.strptime(
         os.path.basename(tar_file_paths[0]).replace(".tar", ""), "%Y%m%d"
     )
 
 
 def process_tar_file(
-    first_leadtime, tar_file_paths, num_tot_leadtimes, hour_start, outdir, tmp_base_dir
+    first_leadtime: int,
+    tar_file_paths: tuple[str],
+    num_tot_leadtimes: int,
+    hour_start: int,
+    outdir: str,
+    tmp_base_dir: str,
 ):
-    """"Process an entire tar file from the archive, which contains 24 leadtimes. 
+    """ "Process an entire tar file from the archive, which contains 24 leadtimes.
     The output extracted dataset is stored in temporary pickle files.
-    
+
     Parameters
     ----------
     first_leadtime: int
-        first leadtime to process from the tar file. Typically a multiple of 24, but it might not 
+        first leadtime to process from the tar file. Typically a multiple of 24, but it might not
         be the case in case of a restart from a particular leadtime checkpoint.
     tar_file_paths: tuple[str]
         tuple of all tar files from the requested period.
@@ -235,7 +247,9 @@ def process_tar_file(
             fgds = fgds.rename({"valid_time": "time"})
 
             serialize_dataset(
-                fgds.merge(anads), first_leadtime + first_leadtime_of_day + index, outdir
+                fgds.merge(anads),
+                first_leadtime + first_leadtime_of_day + index,
+                outdir,
             )
 
 
@@ -306,21 +320,29 @@ def load_data(config: dict) -> None:
         data_collector.join()
 
 
-def serialize_dataset(ds, x, netcdfdir):
-    """"The (parallel) processed files from the archive are stored into temporary pickle files, 
+def serialize_dataset(ds: xr.Dataset, x: int, outdir: str):
+    """ "The (parallel) processed files from the archive are stored into temporary pickle files,
     which are later sequentially picked for generating the zarr storage.
+
+    Parameters
+    ----------
+    ds: xr.Dataset
+        dataset to be serialized
+    x: int
+        leadtime number
+    outdir: str
+        output directory
     """
 
-    filename = os.path.join(netcdfdir, str(x) + ".pckl")
+    filename = os.path.join(outdir, str(x) + ".pckl")
     logger.info(f"Writing to tmp file: {filename}")
     with open(filename + ".lock", "wb") as handle:
         pickle.dump(ds, handle, protocol=pickle.HIGHEST_PROTOCOL)
     os.rename(filename + ".lock", filename)
 
 
-def archive_dataset(ds, config, logger):
-    """"Archive the dataset into a zarr store
-    """
+def archive_dataset(ds: xr.Dataset, config: dict[str, str], logger: logging.Logger):
+    """ "Archive the dataset into a zarr store"""
 
     for name, var in ds.items():
         var = var.chunk(chunks={"time": 1})
@@ -337,8 +359,13 @@ def archive_dataset(ds, config, logger):
     append_or_create_zarr(ds, config, logger)
 
 
-def process_ana_file(full_path):
-    """"Process the analysis file extracting and processing the require variables
+def process_ana_file(full_path: str):
+    """ "Process the analysis file extracting and processing the require variables
+
+    Parameters
+    ----------
+    full_path: str
+        filename full path to analysis file.
     """
     try:
         reader = GribReader.from_files([full_path])
@@ -386,8 +413,14 @@ def process_ana_file(full_path):
         logger.error(f"Error: {e}")
 
 
-def process_fg_file(full_path):
-    """"Process the first guess file extracting and processing the require variables
+def process_fg_file(full_path: str):
+    """Process the first guess file extracting and processing the require variables
+
+    Parameters
+    ----------
+    full_path: str
+        filename full path to first guess file.
+
     """
     try:
         reader = GribReader.from_files([full_path])
