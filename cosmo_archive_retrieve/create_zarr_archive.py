@@ -1,6 +1,5 @@
 # Standard library
 import argparse
-import glob
 import os
 import re
 import shutil
@@ -31,8 +30,18 @@ from idpi import metadata
 logger = logging.getLogger(__name__)
 
 
-def append_or_create_zarr(data_out: xr.Dataset, config: dict, logger) -> None:
-    """Append data to an existing Zarr archive or create a new one."""
+def append_or_create_zarr(data_out: xr.Dataset, config: dict, logger: logging.Logger) -> None:
+    """Append data to an existing Zarr archive or create a new one.
+    
+    Parameters
+    ----------
+    data_out: xr.Dataset
+        dataset to be written in zarr.
+    config: dict[str,str]
+        configuration of application
+    logger:
+        logger
+    """
 
     zarr_path = config["zarr_path"]
 
@@ -54,6 +63,14 @@ def append_or_create_zarr(data_out: xr.Dataset, config: dict, logger) -> None:
 
 
 def find_last_checkpoint(data_path: str):
+    """Find the last leadtime that was generated in the zarr store.
+    
+    Parameters
+    ----------
+    data_path: str
+        path to zarr data store
+    """
+    
     try:
         ds = xr.open_zarr(data_path)
         checkpoint = ds.time.values[-1]
@@ -63,14 +80,26 @@ def find_last_checkpoint(data_path: str):
         return None
 
 
-def collect_datasets(dir, start, end, config):
+def collect_datasets(dir: str, start: int, end: int, config: dict[str,str]):
+    """"Collects pickle datasets in order and archives
+    them into a single zarr store.
+    
+    Parameters
+    ----------
+    dir: str
+        Directory where to find the pickle datasets
+    start: int
+        first leadtime generated.
+    end: int
+        last leadtime generated. 
+    config: 
+        configuration of the application.
+    """
 
     logger = logging.getLogger("COLLECTOR")
 
     logger.info("Start process for collecting tmp files")
     for x in range(start, end + 1):
-        # for file in os.listdir(netcdfdir):
-        # if file.endswith(".txt"):
         filename = os.path.join(dir, str(x) + ".pckl")
         logger.info(f"waiting for file {filename}")
         while not os.path.exists(filename):
@@ -107,25 +136,48 @@ class Process(mp.Process):
 
 
 def compute_first_date_avail(tar_file_paths):
+    """"Compute the first date available in the list of tar files, 
+    extracted from filename pattern.
+    """
+    
     return datetime.strptime(
         os.path.basename(tar_file_paths[0]).replace(".tar", ""), "%Y%m%d"
     )
 
 
 def process_tar_file(
-    leadtime, tar_file_paths, num_tot_leadtimes, hour_start, outdir, tmp_base_dir
+    first_leadtime, tar_file_paths, num_tot_leadtimes, hour_start, outdir, tmp_base_dir
 ):
+    """"Process an entire tar file from the archive, which contains 24 leadtimes. 
+    The output extracted dataset is stored in temporary pickle files.
+    
+    Parameters
+    ----------
+    first_leadtime: int
+        first leadtime to process from the tar file. Typically a multiple of 24, but it might not 
+        be the case in case of a restart from a particular leadtime checkpoint.
+    tar_file_paths: tuple[str]
+        tuple of all tar files from the requested period.
+    num_tot_leadtimes: int
+        total number of leadtimes contained in the list of tar files.
+    hour_start: int
+        first hour where the processing start. Typically 0 unless starting from a checkpoint.
+    outdir: str
+        output directory where to store the processed dataset.
+    tmp_base_dir: str
+        base directory for creation of temporary directories.
+    """
 
-    if leadtime > num_tot_leadtimes:
+    if first_leadtime > num_tot_leadtimes:
         return
 
     with tempfile.TemporaryDirectory(prefix=tmp_base_dir) as tarextract_dir:
 
-        ifile_start = math.floor(leadtime / 24)
-        first_hour = leadtime % 24
+        ifile_start = math.floor(first_leadtime / 24)
+        first_hour = first_leadtime % 24
         first_date_avail = compute_first_date_avail(tar_file_paths)
         first_date = first_date_avail + timedelta(days=ifile_start)
-        logger.info(f"Extracting leadtime: {leadtime}, date: {first_date}")
+        logger.info(f"Extracting leadtime: {first_leadtime}, date: {first_date}")
 
         group_ana_files = []
         group_fg_files = []
@@ -148,7 +200,7 @@ def process_tar_file(
         first_leadtime_of_day = 0
         # on the first iteration we need to make sure we start on the actual hour after
         # the checkpoint, instead of the first hour of this day.
-        if leadtime < hour_start:
+        if first_leadtime < hour_start:
             first_leadtime_of_day = hour_start % 24
 
         for hour in range(first_leadtime_of_day, 24):
@@ -183,7 +235,7 @@ def process_tar_file(
             fgds = fgds.rename({"valid_time": "time"})
 
             serialize_dataset(
-                fgds.merge(anads), leadtime + first_leadtime_of_day + index, outdir
+                fgds.merge(anads), first_leadtime + first_leadtime_of_day + index, outdir
             )
 
 
@@ -244,7 +296,6 @@ def load_data(config: dict) -> None:
         for x in tqdm(
             range(math.floor(hour_start / 24) * 24, num_tot_leadtimes + 1, 24 * n_pool)
         ):
-
             with mp.Pool(n_pool) as p:
                 p.map(tar_file_call, [x + w * 24 for w in range(n_pool)])
 
@@ -256,6 +307,9 @@ def load_data(config: dict) -> None:
 
 
 def serialize_dataset(ds, x, netcdfdir):
+    """"The (parallel) processed files from the archive are stored into temporary pickle files, 
+    which are later sequentially picked for generating the zarr storage.
+    """
 
     filename = os.path.join(netcdfdir, str(x) + ".pckl")
     logger.info(f"Writing to tmp file: {filename}")
@@ -265,6 +319,8 @@ def serialize_dataset(ds, x, netcdfdir):
 
 
 def archive_dataset(ds, config, logger):
+    """"Archive the dataset into a zarr store
+    """
 
     for name, var in ds.items():
         var = var.chunk(chunks={"time": 1})
@@ -282,7 +338,8 @@ def archive_dataset(ds, config, logger):
 
 
 def process_ana_file(full_path):
-
+    """"Process the analysis file extracting and processing the require variables
+    """
     try:
         reader = GribReader.from_files([full_path])
         ds = reader.load_fieldnames(
@@ -330,7 +387,8 @@ def process_ana_file(full_path):
 
 
 def process_fg_file(full_path):
-
+    """"Process the first guess file extracting and processing the require variables
+    """
     try:
         reader = GribReader.from_files([full_path])
         ds = reader.load_fieldnames(
