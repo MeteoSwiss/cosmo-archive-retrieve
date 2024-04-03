@@ -446,7 +446,7 @@ if __name__ == "__main__":
         "-t",
         "--tempdir",
         type=str,
-        default=os.path.join("scratch/", os.environ["USER"] + "/"),
+        default=os.path.join("/scratch/", os.environ["USER"] + "/"),
     )
     parser.add_argument(
         "-o",
