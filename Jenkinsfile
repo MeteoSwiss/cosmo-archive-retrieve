@@ -49,7 +49,13 @@ pipeline {
                 }
             }
         }
-
+        stage('Regex') {
+            steps {
+                script {
+                    sed -i 's/service.meteoswiss.ch/hub.meteoswiss.ch/g' pyproject.toml
+                }
+            }
+        }
         stage('Test') {
             parallel {
                 stage('3.10') {
