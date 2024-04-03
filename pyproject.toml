@@ -21,6 +21,7 @@ url = "https://service.meteoswiss.ch/nexus/repository/python-mch/"
 python = ">=3.10,<3.12"
 numcodecs = "*"
 zarr = "*"
+idpi = { git = "https://github.com/MeteoSwiss-APN/icon_data_processing_incubator.git", branch = "main" }
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^7.2.6"

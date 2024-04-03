@@ -18631,3 +18631,1365 @@ INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/d
   fgds = fgds.rename({"valid_time": "time"})
 INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2389.pckl
 INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030614
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030614
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2390.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030615
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030615
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2391.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030616
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030616
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2392.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030617
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030400
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030617
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2393.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030400
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2328.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2328.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2329.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030618
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031100
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030401
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030618
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2394.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031100
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2496.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030401
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2329.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2329.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2330.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030619
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031101
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030402
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030619
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2395.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031101
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2497.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030402
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2330.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2330.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2331.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030620
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031102
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030403
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030620
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2396.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031102
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2498.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030403
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2331.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2331.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2332.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030621
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031103
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030404
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030621
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2397.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031103
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2499.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030404
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2332.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2332.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2333.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030622
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031104
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030405
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030622
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2398.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031104
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2500.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030405
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2333.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2333.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2334.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/cc5y4sti/ANA/20160306/det/laf2016030623
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031105
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030406
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/cc5y4sti/FG/20160306/det/lff2016030623
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2399.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031105
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2501.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030406
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2334.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2334.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2335.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031106
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030407
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031106
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2502.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030407
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2335.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2335.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2336.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031107
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030408
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031107
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2503.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030408
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2336.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2336.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2337.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031108
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030409
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031108
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2504.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030409
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2337.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2337.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2338.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031109
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030410
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031109
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2505.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030410
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2338.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2338.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2339.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031110
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030411
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031110
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2506.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030411
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2339.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2339.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2340.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031111
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030412
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031111
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2507.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030412
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2340.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2340.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2341.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031112
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030413
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030413
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2341.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031112
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2508.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2341.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2342.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031113
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030414
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030414
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2342.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031113
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2509.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2342.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2343.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031114
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030415
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031114
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2510.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030415
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2343.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2343.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2344.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031115
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030416
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031115
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2511.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030416
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2344.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2344.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2345.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030900
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031116
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030417
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030900
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2448.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031116
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2512.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030417
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2345.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2345.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2346.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030901
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031117
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030418
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030901
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2449.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031117
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2513.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030418
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2346.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2346.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2347.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030902
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031118
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030419
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030902
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2450.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031118
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2514.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030419
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2347.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2347.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2348.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030903
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031119
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030420
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030903
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2451.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031119
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2515.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030420
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2348.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2348.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2349.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030904
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031120
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030421
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030904
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2452.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031120
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2516.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030421
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2349.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2349.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2350.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030905
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031121
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030422
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030905
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2453.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031121
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2517.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030422
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2350.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2350.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2351.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030906
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031122
+INFO:__main__:Processed analysis file: /scratch/cosuna/80szzs54/ANA/20160304/det/laf2016030423
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030906
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2454.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031122
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2518.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/80szzs54/FG/20160304/det/lff2016030423
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2351.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2351.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2352.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2352.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030907
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed analysis file: /scratch/cosuna/7kmh6g3t/ANA/20160311/det/laf2016031123
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2353.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2353.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2354.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2354.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030907
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2455.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/7kmh6g3t/FG/20160311/det/lff2016031123
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2519.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2355.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2355.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2356.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2356.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030908
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2357.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2357.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030908
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2456.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2358.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2358.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2359.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2359.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2360.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2360.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030909
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2361.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2361.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030909
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2457.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2362.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2362.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2363.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2363.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030910
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2364.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2364.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2365.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2365.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030910
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2458.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2366.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2366.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2367.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2367.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030911
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2368.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2368.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030911
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2459.pckl
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2369.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2369.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2370.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2370.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2371.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2371.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030912
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2372.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2372.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030912
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2460.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2373.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2373.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2374.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2374.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030913
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2375.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2375.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2376.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2376.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030913
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2461.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2377.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2377.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2378.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2378.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030914
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2379.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2379.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2380.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2380.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030914
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2462.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2381.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2381.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2382.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2382.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030915
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2383.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2383.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030915
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2463.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2384.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2384.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2385.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2385.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030916
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2386.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2386.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2387.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2387.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030916
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2464.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2388.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2388.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2389.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2389.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030917
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2390.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2390.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030917
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2465.pckl
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2391.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2391.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2392.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2392.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2393.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2393.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030918
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2394.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2394.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030918
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2466.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2395.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2395.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2396.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2396.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2397.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2397.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030919
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2398.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2398.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030919
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2467.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2399.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2399.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2400.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2400.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030920
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2401.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2401.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2402.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2402.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030920
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2468.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2403.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2403.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2404.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2404.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030921
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2405.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2405.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030921
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2469.pckl
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2406.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2406.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2407.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2407.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2408.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2408.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030922
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2409.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2409.pckl
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030922
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2470.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2410.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2410.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2411.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2411.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/vevk1l67/ANA/20160309/det/laf2016030923
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2412.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2412.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:__main__:Processed first guess file: /scratch/cosuna/vevk1l67/FG/20160309/det/lff2016030923
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2471.pckl
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2413.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2413.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2414.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2414.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2415.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2415.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2416.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2416.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2417.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2417.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2418.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2418.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2419.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2419.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2420.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2420.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2421.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2421.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2422.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2422.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2423.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2423.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2424.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2424.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2425.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2425.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2426.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2426.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2427.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2427.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2428.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2428.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2429.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2429.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2430.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2430.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2431.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2431.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2432.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2432.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2433.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2433.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2434.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2434.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2435.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2435.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2436.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2436.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2437.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2437.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2438.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2438.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2439.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2439.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2440.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2440.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2441.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2441.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2442.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2442.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2443.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2443.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2444.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2444.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2445.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2445.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2446.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2446.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2447.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2447.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2448.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2448.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2449.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2449.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2450.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2450.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2451.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2451.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2452.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2452.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2453.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2453.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2454.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2454.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2455.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2455.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2456.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2456.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2457.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2457.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2458.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2458.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2459.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2459.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2460.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2460.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2461.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2461.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2462.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2462.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2463.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2463.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2464.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2464.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2465.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2465.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2466.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2466.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2467.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2467.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2468.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2468.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2469.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2469.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2470.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2470.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2471.pckl
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2471.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2472.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031000
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031000
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2472.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2472.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2473.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031001
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031001
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2473.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2473.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2474.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031002
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031002
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2474.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2474.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2475.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031003
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031003
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2475.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2475.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2476.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031004
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031004
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2476.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2476.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2477.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031005
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031005
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2477.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2477.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2478.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031006
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031006
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2478.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2478.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2479.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031007
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031007
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2479.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2479.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2480.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031008
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031008
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2480.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2480.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2481.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031009
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031009
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2481.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2481.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2482.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031010
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031010
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2482.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2482.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2483.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031011
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031011
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2483.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2483.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2484.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031012
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031012
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2484.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2484.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2485.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031013
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031013
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2485.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2485.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2486.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031014
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031014
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2486.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2486.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2487.pckl
+INFO:__main__:Processed analysis file: /scratch/cosuna/ez01ijk9/ANA/20160310/det/laf2016031015
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['TOT_PREC']}
+INFO:__main__:Processed first guess file: /scratch/cosuna/ez01ijk9/FG/20160310/det/lff2016031015
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:245: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  anads = anads.rename({"valid_time": "time"})
+/scratch-shared/meteoswiss/scratch/cosuna/cosmo-archive-retrieve/scripts/../cosmo_archive_retrieve/create_zarr_archive.py:246: UserWarning: rename 'valid_time' to 'time' does not create an index anymore. Try using swap_dims instead or use set_index after rename to create an indexed coordinate.
+  fgds = fgds.rename({"valid_time": "time"})
+INFO:__main__:Writing to tmp file: /scratch/cosuna/hvqkfhlw/2487.pckl
+INFO:idpi.grib_decoder:Retrieving request: {'param': ['T', 'U_10M', 'V_10M', 'U', 'V', 'PS', 'T_2M', 'P', 'QV', 'TQV', 'PMSL', 'HHL', 'HSURF']}
+INFO:COLLECTOR:loading file /scratch/cosuna/hvqkfhlw/2487.pckl
+INFO:COLLECTOR:Archiving into zarr:/scratch/cosuna/neural-lam/zarr/cosmo_ml_data.zarr
+INFO:COLLECTOR:waiting for file /scratch/cosuna/hvqkfhlw/2488.pckl
