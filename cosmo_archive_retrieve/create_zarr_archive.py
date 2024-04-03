@@ -21,11 +21,10 @@ from pathlib import Path
 import math
 import tarfile
 from datetime import datetime, timedelta
+
+import idpi
 from idpi.operators.destagger import destagger
 from idpi.operators.relhum import relhum
-from idpi.grib_decoder import GribReader
-
-from idpi import metadata
 
 logger = logging.getLogger(__name__)
 
@@ -368,26 +367,28 @@ def process_ana_file(full_path: str):
         filename full path to analysis file.
     """
     try:
-        reader = GribReader.from_files([full_path])
-        ds = reader.load_fieldnames(
-            [
-                "T",
-                "U_10M",
-                "V_10M",
-                "U",
-                "V",
-                "PS",
-                "T_2M",
-                "P",
-                "QV",
-                "TQV",
-                "PMSL",
-                "HHL",
-                "HSURF",
-            ],
+        ds = idpi.grib_decoder.load(
+            idpi.data_source.DataSource(datafiles=[full_path]),
+            {
+                "param": [
+                    "T",
+                    "U_10M",
+                    "V_10M",
+                    "U",
+                    "V",
+                    "PS",
+                    "T_2M",
+                    "P",
+                    "QV",
+                    "TQV",
+                    "PMSL",
+                    "HHL",
+                    "HSURF",
+                ]
+            },
         )
 
-        metadata.set_origin_xy(ds, ref_param="HHL")
+        idpi.metadata.set_origin_xy(ds, ref_param="HHL")
 
         pdset = {}
         for name, var in ds.items():
@@ -423,9 +424,9 @@ def process_fg_file(full_path: str):
 
     """
     try:
-        reader = GribReader.from_files([full_path])
-        ds = reader.load_fieldnames(
-            ["TOT_PREC"],
+        ds = idpi.grib_decoder.load(
+            idpi.data_source.DataSource(datafiles=[full_path]),
+            {"param": ["TOT_PREC"]},
         )
 
         logger.info(f"Processed first guess file: {full_path}")
@@ -451,7 +452,7 @@ if __name__ == "__main__":
         "-o",
         type=str,
         default=os.path.join(
-            "/scratch", os.environ["USER"], "/neural-lam/zarr/cosmo_ml_data.zarr"
+            "/scratch", os.environ["USER"], "neural-lam/zarr/cosmo_ml_data.zarr"
         ),
     )
 
