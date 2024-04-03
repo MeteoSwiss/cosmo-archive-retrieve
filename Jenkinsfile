@@ -197,5 +197,5 @@ pipeline {
             echo 'Cleaning up workspace'
             deleteDir()
         }
-    }
+    } 
 }
