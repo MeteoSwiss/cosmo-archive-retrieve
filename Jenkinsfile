@@ -52,7 +52,7 @@ pipeline {
         stage('Regex') {
             steps {
                 script {
-                    sed -i 's/service.meteoswiss.ch/hub.meteoswiss.ch/g' pyproject.toml
+                    sed -i "s/service.meteoswiss.ch/hub.meteoswiss.ch/g" pyproject.toml
                 }
             }
         }
