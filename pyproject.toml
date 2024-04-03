@@ -23,9 +23,6 @@ numcodecs = "*"
 zarr = "*"
 idpi = { git = "git@github.com:MeteoSwiss-APN/icon_data_processing_incubator.git", branch = "main" }
 
-[tool.poetry.scripts]
-pre-install = "cosmo_archive_retrieve.pre_install:main"
-
 [tool.poetry.dev-dependencies]
 Sphinx = "^7.2.6"
 sphinx-autoapi = "^3.0.0"
