@@ -341,7 +341,7 @@ def serialize_dataset(ds: xr.Dataset, x: int, outdir: str):
 
 
 def archive_dataset(ds: xr.Dataset, config: dict[str, str], logger: logging.Logger):
-    """ "Archive the dataset into a zarr store"""
+    """Archive the dataset into a zarr store"""
 
     for name, var in ds.items():
         var = var.chunk(chunks={"time": 1})
