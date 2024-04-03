@@ -83,7 +83,7 @@ def find_last_checkpoint(data_path: str):
 
 
 def collect_datasets(dir: str, start: int, end: int, config: dict[str, str]):
-    """ "Collects pickle datasets in order and archives
+    """Collects pickle datasets in order and archives
     them into a single zarr store.
 
     Parameters
@@ -138,7 +138,7 @@ class Process(mp.Process):
 
 
 def compute_first_date_avail(tar_file_paths: tuple[str]):
-    """ "Compute the first date available in the list of tar files,
+    """Compute the first date available in the list of tar files,
     extracted from filename pattern.
 
     Parameters
@@ -160,7 +160,7 @@ def process_tar_file(
     outdir: str,
     tmp_base_dir: str,
 ):
-    """ "Process an entire tar file from the archive, which contains 24 leadtimes.
+    """Process an entire tar file from the archive, which contains 24 leadtimes.
     The output extracted dataset is stored in temporary pickle files.
 
     Parameters
@@ -321,7 +321,7 @@ def load_data(config: dict) -> None:
 
 
 def serialize_dataset(ds: xr.Dataset, x: int, outdir: str):
-    """ "The (parallel) processed files from the archive are stored into temporary pickle files,
+    """The (parallel) processed files from the archive are stored into temporary pickle files,
     which are later sequentially picked for generating the zarr storage.
 
     Parameters
@@ -360,7 +360,7 @@ def archive_dataset(ds: xr.Dataset, config: dict[str, str], logger: logging.Logg
 
 
 def process_ana_file(full_path: str):
-    """ "Process the analysis file extracting and processing the require variables
+    """Process the analysis file extracting and processing the require variables
 
     Parameters
     ----------
