@@ -412,7 +412,7 @@ def process_ana_file(full_path: str):
         logger.error(f"Error: {e}")
 
 
-def process_fg_file(full_path: str):
+def process_fg_file(full_path: str) -> xr.Dataset:
     """Process the first guess file extracting and processing the require variables
 
     Parameters
