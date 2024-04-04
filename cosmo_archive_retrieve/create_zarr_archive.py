@@ -232,19 +232,19 @@ def process_tar_file(
         for index, (ana_full_path, fg_full_path) in enumerate(
             zip(group_ana_files, group_fg_files)
         ):
-            anads = process_ana_file(ana_full_path)
-            fgds = process_fg_file(fg_full_path)
+            analysis_datasets = process_ana_file(ana_full_path)
+            first_guess_datasets = process_fg_file(fg_full_path)
 
             # FG ref time is one hour before ref time of ANA
             # Therefore we remove these coordinates to avoid misalignment in zarr
             # We make valid_time the only (aligned) coordinate -> "time"
-            anads = anads.drop_vars(["ref_time", "time"])
-            fgds = fgds.drop_vars(["ref_time", "time"])
-            anads = anads.rename({"valid_time": "time"})
-            fgds = fgds.rename({"valid_time": "time"})
+            analysis_datasets = analysis_datasets.drop_vars(["ref_time", "time"])
+            first_guess_datasets = first_guess_datasets.drop_vars(["ref_time", "time"])
+            analysis_datasets = analysis_datasets.rename({"valid_time": "time"})
+            first_guess_datasets = first_guess_datasets.rename({"valid_time": "time"})
 
             serialize_dataset(
-                fgds.merge(anads),
+                first_guess_datasets.merge(analysis_datasets),
                 first_leadtime + first_leadtime_of_day + index,
                 outdir,
             )
