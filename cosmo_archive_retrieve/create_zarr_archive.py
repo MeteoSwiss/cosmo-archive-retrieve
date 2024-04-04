@@ -253,7 +253,6 @@ def process_tar_file(
 def load_data(config: dict) -> None:
     """Load weather data from archive and store it in a Zarr archive."""
 
-    n_pool = config["n_pool"]
     tar_file_paths = []
     regex = re.compile(".*\.list")
     for year in data_config["train_years"]:
@@ -304,6 +303,7 @@ def load_data(config: dict) -> None:
         )
 
         # iterate over all the leadtimes (hours) in the archive day by day
+        n_pool = config["n_pool"]
         for x in tqdm(
             range(math.floor(hour_start / 24) * 24, num_tot_leadtimes + 1, 24 * n_pool)
         ):
