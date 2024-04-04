@@ -20,7 +20,7 @@ import tempfile
 from pathlib import Path
 import math
 import tarfile
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import idpi
 from idpi.operators.destagger import destagger
@@ -48,7 +48,7 @@ def append_or_create_zarr(
 
     logger.info(f"Archiving into zarr:{zarr_path}")
 
-    if os.path.exists(zarr_path):
+    if os.path.isdir(zarr_path):
         data_out.to_zarr(
             store=zarr_path,
             mode="a",
@@ -76,13 +76,13 @@ def find_last_checkpoint(data_path: str):
         ds = xr.open_zarr(data_path)
         checkpoint = ds.time.values[-1]
 
-        return datetime.utcfromtimestamp(checkpoint.tolist() / 1e9)
+        return datetime.fromtimestamp(checkpoint.tolist() / 1e9, timezone.utc)
     except:
         return None
 
 
 def collect_datasets(dir: str, start: int, end: int, config: dict[str, str]):
-    """Collects pickle datasets in order and archives
+    """Collect pickled datasets in order and archives
     them into a single zarr store.
 
     Parameters
@@ -101,7 +101,7 @@ def collect_datasets(dir: str, start: int, end: int, config: dict[str, str]):
 
     logger.info("Start process for collecting tmp files")
     for x in range(start, end + 1):
-        filename = os.path.join(dir, str(x) + ".pckl")
+        filename = os.path.join(dir, str(x) + ".pickle")
         logger.info(f"waiting for file {filename}")
         while not os.path.exists(filename):
             time.sleep(0.2)
@@ -136,7 +136,7 @@ class Process(mp.Process):
         return self._exception
 
 
-def compute_first_date_avail(tar_file_paths: tuple[str]):
+def compute_first_date_avail(tar_file_paths: tuple[str]) -> datetime:
     """Compute the first date available in the list of tar files,
     extracted from filename pattern.
 
@@ -146,9 +146,7 @@ def compute_first_date_avail(tar_file_paths: tuple[str]):
         list of filenames of tar files
     """
 
-    return datetime.strptime(
-        os.path.basename(tar_file_paths[0]).replace(".tar", ""), "%Y%m%d"
-    )
+    return datetime.strptime(Path(tar_file_paths[0].replace(".tar", "")).name, "%Y%m%d")
 
 
 def process_tar_file(
@@ -234,19 +232,19 @@ def process_tar_file(
         for index, (ana_full_path, fg_full_path) in enumerate(
             zip(group_ana_files, group_fg_files)
         ):
-            anads = process_ana_file(ana_full_path)
-            fgds = process_fg_file(fg_full_path)
+            analysis_datasets = process_ana_file(ana_full_path)
+            first_guess_datasets = process_fg_file(fg_full_path)
 
             # FG ref time is one hour before ref time of ANA
             # Therefore we remove these coordinates to avoid misalignment in zarr
             # We make valid_time the only (aligned) coordinate -> "time"
-            anads = anads.drop_vars(["ref_time", "time"])
-            fgds = fgds.drop_vars(["ref_time", "time"])
-            anads = anads.rename({"valid_time": "time"})
-            fgds = fgds.rename({"valid_time": "time"})
+            analysis_datasets = analysis_datasets.drop_vars(["ref_time", "time"])
+            first_guess_datasets = first_guess_datasets.drop_vars(["ref_time", "time"])
+            analysis_datasets = analysis_datasets.rename({"valid_time": "time"})
+            first_guess_datasets = first_guess_datasets.rename({"valid_time": "time"})
 
             serialize_dataset(
-                fgds.merge(anads),
+                first_guess_datasets.merge(analysis_datasets),
                 first_leadtime + first_leadtime_of_day + index,
                 outdir,
             )
@@ -255,12 +253,11 @@ def process_tar_file(
 def load_data(config: dict) -> None:
     """Load weather data from archive and store it in a Zarr archive."""
 
-    n_pool = config["n_pool"]
     tar_file_paths = []
     regex = re.compile(".*\.list")
     for year in data_config["train_years"]:
         data_path = os.path.join(data_config["data_path"], "ANA" + year)
-        for root, dirs, files in os.walk(data_path):
+        for root, _, files in os.walk(data_path):
             for file in files:
                 if regex.match(file):
                     continue
@@ -306,6 +303,7 @@ def load_data(config: dict) -> None:
         )
 
         # iterate over all the leadtimes (hours) in the archive day by day
+        n_pool = config["n_pool"]
         for x in tqdm(
             range(math.floor(hour_start / 24) * 24, num_tot_leadtimes + 1, 24 * n_pool)
         ):
@@ -333,7 +331,7 @@ def serialize_dataset(ds: xr.Dataset, x: int, outdir: str):
         output directory
     """
 
-    filename = os.path.join(outdir, str(x) + ".pckl")
+    filename = os.path.join(outdir, str(x) + ".pickle")
     logger.info(f"Writing to tmp file: {filename}")
     with open(filename + ".lock", "wb") as handle:
         pickle.dump(ds, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -414,7 +412,7 @@ def process_ana_file(full_path: str):
         logger.error(f"Error: {e}")
 
 
-def process_fg_file(full_path: str):
+def process_fg_file(full_path: str) -> xr.Dataset:
     """Process the first guess file extracting and processing the require variables
 
     Parameters
