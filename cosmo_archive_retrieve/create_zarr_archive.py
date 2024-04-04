@@ -48,7 +48,7 @@ def append_or_create_zarr(
 
     logger.info(f"Archiving into zarr:{zarr_path}")
 
-    if os.path.exists(zarr_path):
+    if os.path.isdir(zarr_path):
         data_out.to_zarr(
             store=zarr_path,
             mode="a",
