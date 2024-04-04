@@ -20,7 +20,7 @@ import tempfile
 from pathlib import Path
 import math
 import tarfile
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import idpi
 from idpi.operators.destagger import destagger
@@ -76,7 +76,7 @@ def find_last_checkpoint(data_path: str):
         ds = xr.open_zarr(data_path)
         checkpoint = ds.time.values[-1]
 
-        return datetime.utcfromtimestamp(checkpoint.tolist() / 1e9)
+        return datetime.fromtimestamp(checkpoint.tolist() / 1e9, timezone.utc)
     except:
         return None
 
