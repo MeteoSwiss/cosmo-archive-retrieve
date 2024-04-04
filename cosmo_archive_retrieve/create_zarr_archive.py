@@ -258,7 +258,7 @@ def load_data(config: dict) -> None:
     regex = re.compile(".*\.list")
     for year in data_config["train_years"]:
         data_path = os.path.join(data_config["data_path"], "ANA" + year)
-        for root, dirs, files in os.walk(data_path):
+        for root, _, files in os.walk(data_path):
             for file in files:
                 if regex.match(file):
                     continue
