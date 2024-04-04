@@ -136,7 +136,7 @@ class Process(mp.Process):
         return self._exception
 
 
-def compute_first_date_avail(tar_file_paths: tuple[str]):
+def compute_first_date_avail(tar_file_paths: tuple[str]) -> datetime:
     """Compute the first date available in the list of tar files,
     extracted from filename pattern.
 
@@ -146,9 +146,7 @@ def compute_first_date_avail(tar_file_paths: tuple[str]):
         list of filenames of tar files
     """
 
-    return datetime.strptime(
-        os.path.basename(tar_file_paths[0]).replace(".tar", ""), "%Y%m%d"
-    )
+    return datetime.strptime(Path(tar_file_paths[0].replace(".tar", "")).name, "%Y%m%d")
 
 
 def process_tar_file(
