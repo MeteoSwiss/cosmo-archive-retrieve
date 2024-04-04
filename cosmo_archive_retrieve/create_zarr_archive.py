@@ -82,7 +82,7 @@ def find_last_checkpoint(data_path: str):
 
 
 def collect_datasets(dir: str, start: int, end: int, config: dict[str, str]):
-    """Collects pickle datasets in order and archives
+    """Collect pickled datasets in order and archives
     them into a single zarr store.
 
     Parameters
@@ -101,7 +101,7 @@ def collect_datasets(dir: str, start: int, end: int, config: dict[str, str]):
 
     logger.info("Start process for collecting tmp files")
     for x in range(start, end + 1):
-        filename = os.path.join(dir, str(x) + ".pckl")
+        filename = os.path.join(dir, str(x) + ".pickle")
         logger.info(f"waiting for file {filename}")
         while not os.path.exists(filename):
             time.sleep(0.2)
@@ -333,7 +333,7 @@ def serialize_dataset(ds: xr.Dataset, x: int, outdir: str):
         output directory
     """
 
-    filename = os.path.join(outdir, str(x) + ".pckl")
+    filename = os.path.join(outdir, str(x) + ".pickle")
     logger.info(f"Writing to tmp file: {filename}")
     with open(filename + ".lock", "wb") as handle:
         pickle.dump(ds, handle, protocol=pickle.HIGHEST_PROTOCOL)
