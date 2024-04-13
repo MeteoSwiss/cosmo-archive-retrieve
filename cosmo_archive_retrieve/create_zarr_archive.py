@@ -403,31 +403,38 @@ def process_ana_file(full_path: str):
                     "V",
                     "PS",
                     "T_2M",
-                    "P",
                     "QV",
                     "TQV",
                     "PMSL",
                     "HHL",
                     "HSURF",
                     "PP",
+                    "P0FL",
+                    "P",
                 ]
             },
         )
 
-        idpi.metadata.set_origin_xy(ds, ref_param="HHL")
+        idpi.metadata.set_origin_xy(ds, ref_param="P")
 
         pdset = {}
         for name, var in ds.items():
 
-            for dim in ["x", "y", "z"]:
+            for dim in ["x", "y"]:
                 origind = "origin_" + dim
                 if origind in var.attrs and var.attrs[origind] != 0.0:
                     var = destagger(var, dim)
-                    var.attrs[origind] = 0.0
+
             if name == "HHL":
+                # workaround until the typeOflevel used in the archive is supported (hybrid)
+                # https://github.com/MeteoSwiss-APN/icon_data_processing_incubator/issues/131
+                var.attrs["origin_z"] = -0.5
+                var.attrs["vcoord_type"] = "model_level"
+                var = destagger(var, "z")
                 name = "HFL"
 
-            pdset[name] = var
+            # remove z dim for all 2d var in order to be able to create a dataset
+            pdset[name] = var.squeeze()
 
         pdset["RELHUM"] = relhum(
             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
