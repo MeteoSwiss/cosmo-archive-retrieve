@@ -370,12 +370,9 @@ def archive_dataset(ds: xr.Dataset, config: dict[str, str], logger: logging.Logg
     """Archive the dataset into a zarr store"""
 
     for name, var in ds.items():
-        var = var.chunk(chunks={"time": 1})
+        if "time" in var.sizes:
+            var = var.chunk(chunks={"time": 1})
         var.encoding = {"compressor": config["compressor"]}
-
-        if "z" in var.dims and var.sizes["z"] == 1:
-            var = var.squeeze(dim="z")
-            var = var.drop_vars("z")
 
         var.attrs.pop("message", None)
         ds[name] = var
@@ -434,7 +431,11 @@ def process_ana_file(full_path: str):
                 name = "HFL"
 
             # remove z dim for all 2d var in order to be able to create a dataset
-            pdset[name] = var.squeeze()
+            if "z" in var.sizes and var.sizes["z"] == 1:
+                var = var.squeeze(dim="z")
+            if name == "HFL" or name == "HSURF":
+                var = var.squeeze(dim="time")
+            pdset[name] = var
 
         pdset["RELHUM"] = relhum(
             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
