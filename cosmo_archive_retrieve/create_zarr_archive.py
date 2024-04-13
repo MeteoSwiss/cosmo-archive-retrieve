@@ -144,6 +144,11 @@ def compute_first_date_avail(tar_file_paths: tuple[str]) -> datetime:
     ----------
     tar_file_paths: tuple[str]
         list of filenames of tar files
+
+    Returns
+    -------
+    datetime
+        first date found in the requested period of the archive.
     """
 
     return datetime.strptime(Path(tar_file_paths[0].replace(".tar", "")).name, "%Y%m%d")
@@ -250,13 +255,23 @@ def process_tar_file(
             )
 
 
-def load_data(config: dict) -> None:
-    """Load weather data from archive and store it in a Zarr archive."""
+def get_archive_filenames_list(config: dict) -> list[str]:
+    """Get a list of (tar) filenames of the archive to be extracted.
 
+    Parameters
+    ----------
+    config: dict
+        main configuration of the application
+
+    Returns
+    -------
+    list[str]
+        list of filenames of the archive
+    """
     tar_file_paths = []
     regex = re.compile(".*\.list")
-    for year in data_config["train_years"]:
-        data_path = os.path.join(data_config["data_path"], "ANA" + year)
+    for year in config["train_years"]:
+        data_path = os.path.join(config["data_path"], "ANA" + year)
         for root, _, files in os.walk(data_path):
             for file in files:
                 if regex.match(file):
@@ -264,9 +279,20 @@ def load_data(config: dict) -> None:
                 full_path = os.path.join(root, file)
                 tar_file_paths.append(full_path)
     tar_file_paths.sort()
+    return tar_file_paths
 
+
+def load_data(config: dict) -> None:
+    """Load weather data from archive and store it in a Zarr archive.
+
+    Parameters
+    ----------
+    config: dict
+        main configuration of the application
+    """
+
+    tar_file_paths = get_archive_filenames_list(config)
     num_tot_leadtimes = len(tar_file_paths) * 24
-
     first_date_avail = compute_first_date_avail(tar_file_paths)
 
     logger.info(f"Initial date available in archive: {first_date_avail}")
@@ -382,6 +408,7 @@ def process_ana_file(full_path: str):
                     "PMSL",
                     "HHL",
                     "HSURF",
+                    "PP",
                 ]
             },
         )
@@ -404,7 +431,6 @@ def process_ana_file(full_path: str):
         pdset["RELHUM"] = relhum(
             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
         )
-        pdset["FI"] = pdset["HFL"] * 9.80665
 
         logger.info(f"Processed analysis file: {full_path}")
         return xr.Dataset(pdset)
