@@ -151,7 +151,9 @@ def compute_first_date_avail(tar_file_paths: tuple[str]) -> datetime:
         first date found in the requested period of the archive.
     """
 
-    return datetime.strptime(Path(tar_file_paths[0].replace(".tar", "")).name, "%Y%m%d")
+    return datetime.strptime(
+        Path(tar_file_paths[0].replace(".tar", "")).name, "%Y%m%d"
+    ).replace(tzinfo=timezone.utc)
 
 
 def process_tar_file(
@@ -370,7 +372,6 @@ def archive_dataset(ds: xr.Dataset, config: dict[str, str], logger: logging.Logg
     for name, var in ds.items():
         var = var.chunk(chunks={"time": 1})
         var.encoding = {"compressor": config["compressor"]}
-        var.time.encoding = {"dtype": "float64"}
 
         if "z" in var.dims and var.sizes["z"] == 1:
             var = var.squeeze(dim="z")
