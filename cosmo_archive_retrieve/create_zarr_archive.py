@@ -411,8 +411,6 @@ def process_ana_file(full_path: str):
         "P0FL",
         "RELHUM",
         "CLCT",
-        # Net short wave radiation flux (at the surface)
-        "SOBS_RAD",
     }
     try:
         ds = idpi.grib_decoder.load(
@@ -435,7 +433,6 @@ def process_ana_file(full_path: str):
                     "PP",
                     "P",
                     "CLCT",
-                    "SOBS_RAD",
                 ]
             },
         )
@@ -509,12 +506,15 @@ def process_fg_file(full_path: str) -> xr.Dataset:
             idpi.data_source.DataSource(datafiles=[full_path]),
             {
                 "param": [
-                    "TOT_PREC",  # Net long wave radiation flux (m) (at the surface)
+                    "TOT_PREC",
+                    # Net long wave radiation flux (m) (at the surface)
                     "ATHB_S",
                     # Latent Heat Net Flux (m)
                     "ALHFL_S",
                     # Sensible Heat Net Flux (m)
                     "ASHFL_S",
+                    # Net short wave radiation flux (at the surface)
+                    "ASOB_S",
                 ]
             },
         )
