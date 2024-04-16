@@ -380,6 +380,18 @@ def archive_dataset(ds: xr.Dataset, config: dict[str, str], logger: logging.Logg
     append_or_create_zarr(ds, config, logger)
 
 
+def check_hypercube(dset: dict[xr.DataArray]) -> None:
+    dims = {}
+    for field, da in dset.items():
+        for dim, length in zip(da.dims, da.shape):
+            if dim in dims and dims[dim] != length:
+                raise RuntimeError(
+                    f"Dimension {dim} of hypercube (for {field}) not aligned between arrays. Field has size {length} while hypercube contains {dims[dim]}"
+                )
+            else:
+                dims[dim] = length
+
+
 def process_ana_file(full_path: str):
     """Process the analysis file extracting and processing the require variables
 
@@ -442,6 +454,8 @@ def process_ana_file(full_path: str):
         )
 
         logger.info(f"Processed analysis file: {full_path}")
+
+        check_hypercube(pdset)
         return xr.Dataset(pdset)
     except (FileNotFoundError, OSError) as e:
         logger.error(f"Error: {e}")
