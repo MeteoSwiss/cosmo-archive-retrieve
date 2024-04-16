@@ -13,7 +13,9 @@ def main():
             [
                 "git",
                 "clone",
-                "git@github.com:COSMO-ORG/eccodes-cosmo-resources",
+                "-b",
+                "grib1_mswiss",
+                "git@github.com:cosunae/eccodes-cosmo-resources",
                 clone_dir,
             ],
             check=True,

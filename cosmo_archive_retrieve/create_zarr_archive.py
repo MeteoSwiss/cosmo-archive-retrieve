@@ -400,6 +400,27 @@ def process_ana_file(full_path: str):
     full_path: str
         filename full path to analysis file.
     """
+
+    out_params = {
+        "T",
+        "U_10M",
+        "V_10M",
+        "U",
+        "V",
+        "PS",
+        "T_2M",
+        "QV",
+        "TQV",
+        "PMSL",
+        "HFL",
+        "HSURF",
+        "PP",
+        "P0FL",
+        "RELHUM",
+        "CLCT",
+        # Net short wave radiation flux (at the surface)
+        "SOBS_RAD",
+    }
     try:
         ds = idpi.grib_decoder.load(
             idpi.data_source.DataSource(datafiles=[full_path]),
@@ -418,13 +439,14 @@ def process_ana_file(full_path: str):
                     "HHL",
                     "HSURF",
                     "PP",
-                    "P0FL",
                     "P",
+                    "CLCT",
+                    "SOBS_RAD",
                 ]
             },
         )
 
-        idpi.metadata.set_origin_xy(ds, ref_param="P")
+        idpi.metadata.set_origin_xy(ds, ref_param="T")
 
         pdset = {}
         for name, var in ds.items():
@@ -441,6 +463,8 @@ def process_ana_file(full_path: str):
                 var.attrs["vcoord_type"] = "model_level"
                 var = destagger(var, "z")
                 name = "HFL"
+            if name == "pp":
+                name = "PP"
 
             # remove z dim for all 2d var in order to be able to create a dataset
             if "z" in var.sizes and var.sizes["z"] == 1:
@@ -449,6 +473,7 @@ def process_ana_file(full_path: str):
                 var = var.squeeze(dim="time")
             pdset[name] = var
 
+        pdset["P0FL"] = pdset["P"] - pdset["PP"]
         pdset["RELHUM"] = relhum(
             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
         )
@@ -456,7 +481,13 @@ def process_ana_file(full_path: str):
         logger.info(f"Processed analysis file: {full_path}")
 
         check_hypercube(pdset)
-        return xr.Dataset(pdset)
+
+        if not out_params.issubset(pdset):
+            raise RuntimeError(
+                f"Missing output parameter {out_params} in dataset {pdset.keys()}"
+            )
+        # Return only the fields in out_params
+        return xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
     except (FileNotFoundError, OSError) as e:
         logger.error(f"Error: {e}")
 
@@ -473,7 +504,16 @@ def process_fg_file(full_path: str) -> xr.Dataset:
     try:
         ds = idpi.grib_decoder.load(
             idpi.data_source.DataSource(datafiles=[full_path]),
-            {"param": ["TOT_PREC"]},
+            {
+                "param": [
+                    "TOT_PREC",  # Net long wave radiation flux (m) (at the surface)
+                    "ATHB_S",
+                    # Latent Heat Net Flux (m)
+                    "ALHFL_S",
+                    # Sensible Heat Net Flux (m)
+                    "ASHFL_S",
+                ]
+            },
         )
 
         logger.info(f"Processed first guess file: {full_path}")
