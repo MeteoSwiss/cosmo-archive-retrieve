@@ -242,14 +242,6 @@ def process_tar_file(
             analysis_datasets = process_ana_file(ana_full_path)
             first_guess_datasets = process_fg_file(fg_full_path)
 
-            # FG ref time is one hour before ref time of ANA
-            # Therefore we remove these coordinates to avoid misalignment in zarr
-            # We make valid_time the only (aligned) coordinate -> "time"
-            analysis_datasets = analysis_datasets.drop_vars(["ref_time", "time"])
-            first_guess_datasets = first_guess_datasets.drop_vars(["ref_time", "time"])
-            analysis_datasets = analysis_datasets.rename({"valid_time": "time"})
-            first_guess_datasets = first_guess_datasets.rename({"valid_time": "time"})
-
             serialize_dataset(
                 first_guess_datasets.merge(analysis_datasets),
                 first_leadtime + first_leadtime_of_day + index,
@@ -407,6 +399,7 @@ def process_ana_file(full_path: str):
         "V_10M",
         "U",
         "V",
+        "W",
         "PS",
         "T_2M",
         "QV",
@@ -431,6 +424,7 @@ def process_ana_file(full_path: str):
                     "V_10M",
                     "U",
                     "V",
+                    "W",
                     "PS",
                     "T_2M",
                     "QV",
@@ -456,12 +450,13 @@ def process_ana_file(full_path: str):
                 if origind in var.attrs and var.attrs[origind] != 0.0:
                     var = destagger(var, dim)
 
-            if name == "HHL":
+            if name == "HHL" or name == "W":
                 # workaround until the typeOflevel used in the archive is supported (hybrid)
                 # https://github.com/MeteoSwiss-APN/icon_data_processing_incubator/issues/131
                 var.attrs["origin_z"] = -0.5
                 var.attrs["vcoord_type"] = "model_level"
                 var = destagger(var, "z")
+            if name == "HHL":
                 name = "HFL"
             if name == "pp":
                 name = "PP"
@@ -487,7 +482,15 @@ def process_ana_file(full_path: str):
                 f"Missing output parameter {out_params} in dataset {pdset.keys()}"
             )
         # Return only the fields in out_params
-        return xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
+        dset = xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
+
+        # FG ref time is one hour before ref time of ANA
+        # Therefore we remove these coordinates to avoid misalignment in zarr
+        # We make valid_time the only (aligned) coordinate -> "time"
+        dset = dset.drop_vars(["ref_time", "time"])
+        dset = dset.rename({"valid_time": "time"})
+        return dset
+
     except (FileNotFoundError, OSError) as e:
         logger.error(f"Error: {e}")
 
@@ -517,7 +520,15 @@ def process_fg_file(full_path: str) -> xr.Dataset:
         )
 
         logger.info(f"Processed first guess file: {full_path}")
-        return xr.Dataset(ds)
+        dset = xr.Dataset(ds)
+
+        # FG ref time is one hour before ref time of ANA
+        # Therefore we remove these coordinates to avoid misalignment in zarr
+        # We make valid_time the only (aligned) coordinate -> "time"
+        dset = dset.drop_vars(["ref_time", "time"])
+        dset = dset.rename({"valid_time": "time"})
+        return dset
+
     except (FileNotFoundError, OSError) as e:
         logger.error(f"Error: {e}")
 
