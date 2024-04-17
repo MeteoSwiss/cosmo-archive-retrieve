@@ -411,6 +411,7 @@ def process_ana_file(full_path: str):
         "P0FL",
         "RELHUM",
         "CLCT",
+        "W_SNOW",
     }
     try:
         ds = idpi.grib_decoder.load(
@@ -433,6 +434,7 @@ def process_ana_file(full_path: str):
                     "PP",
                     "P",
                     "CLCT",
+                    "W_SNOW",
                 ]
             },
         )
