@@ -405,7 +405,7 @@ def process_ana_file(full_path: str):
         "QV",
         "TQV",
         "PMSL",
-        "HFL",
+        "FI",
         "HSURF",
         "PP",
         "P0FL",
@@ -465,6 +465,7 @@ def process_ana_file(full_path: str):
                 var = var.squeeze(dim="time")
             pdset[name] = var
 
+        pdset["FI"] = pdset["HFL"] * 9.80665
         pdset["P0FL"] = pdset["P"] - pdset["PP"]
         pdset["RELHUM"] = relhum(
             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
@@ -515,6 +516,9 @@ def process_fg_file(full_path: str) -> xr.Dataset:
                     "ASHFL_S",
                     # Net short wave radiation flux (at the surface)
                     "ASOB_S",
+                    "DURSUN",
+                    "VMAX_10M",
+                    "UMAX_10M",
                 ]
             },
         )
