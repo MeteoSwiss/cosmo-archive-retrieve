@@ -466,7 +466,8 @@ def process_ana_file(full_path: str):
             pdset[name] = var
 
         pdset["FI"] = pdset["HFL"] * 9.80665
-        pdset["P0FL"] = pdset["P"] - pdset["PP"]
+        # P0FL should be a time invariant
+        pdset["P0FL"] = (pdset["P"] - pdset["PP"]).squeeze(dim="time")
         pdset["RELHUM"] = relhum(
             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
         )
