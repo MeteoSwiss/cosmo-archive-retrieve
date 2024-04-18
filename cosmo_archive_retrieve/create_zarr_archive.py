@@ -21,6 +21,7 @@ from pathlib import Path
 import math
 import tarfile
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 import idpi
 from idpi.operators.destagger import destagger
@@ -414,6 +415,9 @@ def process_ana_file(full_path: str):
         "W_SNOW",
         "TD_2M",
     }
+
+    logger.info(f"Processing analysis file: {full_path}")
+
     try:
         ds = idpi.grib_decoder.load(
             idpi.data_source.DataSource(datafiles=[full_path]),
@@ -449,14 +453,23 @@ def process_ana_file(full_path: str):
             for dim in ["x", "y"]:
                 origind = "origin_" + dim
                 if origind in var.attrs and var.attrs[origind] != 0.0:
+                    old_coords = {}
+                    for coord in ("valid_time", "ref_time"):
+                        old_coords[coord] = var.coords[coord]
                     var = destagger(var, dim)
+                    var = var.assign_coords(old_coords)
 
             if name == "HHL" or name == "W":
                 # workaround until the typeOflevel used in the archive is supported (hybrid)
                 # https://github.com/MeteoSwiss-APN/icon_data_processing_incubator/issues/131
                 var.attrs["origin_z"] = -0.5
                 var.attrs["vcoord_type"] = "model_level"
+                for coord in ("valid_time", "ref_time"):
+                    old_coords[coord] = var.coords[coord]
+
                 var = destagger(var, "z")
+                var = var.assign_coords(old_coords)
+
             if name == "HHL":
                 name = "HFL"
             if name == "pp":
@@ -465,8 +478,36 @@ def process_ana_file(full_path: str):
             # remove z dim for all 2d var in order to be able to create a dataset
             if "z" in var.sizes and var.sizes["z"] == 1:
                 var = var.squeeze(dim="z")
+
+            # The analysis files should all be generated a 'step' = 0. For unknown reasons,
+            # laf2016031421 was generated with some variables on step 1. This generates variables (P & PP)
+            # with unaligned time coordinates. We can not fix the archive data, so we hack it here.
+            if var.time.values != [0]:
+                var = var.assign_coords({"time": [0]})
+                logger.warning(f"Found a wrong 'step' (!=0) for {name} in {full_path}")
+
+            # Due to the issue that step and ref_time is wrong (at last in one file of the archive)
+            # we double check that the valid_time is as expected
+            filename = Path(full_path).name.replace("laf", "")
+            if (
+                datetime.utcfromtimestamp(valid_time[0].astype(int) * 1e-9).strftime(
+                    "%Y%m%d%H"
+                )
+                != filename
+            ):
+                raise RuntimeError("Wrong valid time")
+
+            # FG ref time is one hour before ref time of ANA
+            # Therefore we remove these coordinates to avoid misalignment in zarr
+            # We make valid_time the only (aligned) coordinate -> "time"
+            valid_time = var.coords["valid_time"].values
+
+            var = var.drop_vars(["ref_time", "time", "valid_time"])
+            var = var.assign_coords({"time": ("time", valid_time)})
+
             if name == "HFL" or name == "HSURF":
                 var = var.squeeze(dim="time")
+
             pdset[name] = var
 
         pdset["FI"] = pdset["HFL"] * 9.80665
@@ -487,11 +528,6 @@ def process_ana_file(full_path: str):
         # Return only the fields in out_params
         dset = xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
 
-        # FG ref time is one hour before ref time of ANA
-        # Therefore we remove these coordinates to avoid misalignment in zarr
-        # We make valid_time the only (aligned) coordinate -> "time"
-        dset = dset.drop_vars(["ref_time", "time"])
-        dset = dset.rename({"valid_time": "time"})
         return dset
 
     except (FileNotFoundError, OSError) as e:
