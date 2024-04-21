@@ -22,6 +22,7 @@ import math
 import tarfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import Literal
 
 import idpi
 from idpi.operators.destagger import destagger
@@ -385,6 +386,73 @@ def check_hypercube(dset: dict[xr.DataArray]) -> None:
                 dims[dim] = length
 
 
+def adapt_coords_to_zarr(
+    name: str, var: xr.DataArray, full_path: str, file_type: Literal["ANA", "FG"]
+) -> xr.DataArray:
+    """Adapt the coordinates of the xarray loaded from grib in order to prepare it for writing the zarr dataset.
+    A single time coordinate is generated with the datetime of the data (i.e. equivalent to valid_time),
+    eliminating valid_time and ref_time. Also we check that this coordinate is consistent with the filename,
+    since there are (rare) cases where the encoding of the step is wrong in the archive.
+    Eliminate z dimension from 2d fields
+
+    Parameters
+    ----------
+    name: str
+        name of variable
+    var: xr.DataArray
+        variable
+    full_path: str
+        filename full path with grib data
+
+    Returns
+    -------
+    xr.DataArray
+        An array with coords adapted to write to zarr
+
+    """
+
+    # remove z dim for all 2d var in order to be able to create a dataset
+    if "z" in var.sizes and var.sizes["z"] == 1:
+        var = var.squeeze(dim="z")
+
+    # The analysis files should all be generated a 'step' = 0. For unknown reasons,
+    # laf2016031421 was generated with some variables on step 1. This generates variables (P & PP)
+    # with unaligned time coordinates. We can not fix the archive data, so we hack it here.
+    exp_step = 0 if file_type == "ANA" else 1
+    if var.time.values != [exp_step]:
+        var = var.assign_coords({"time": [exp_step]})
+        logger.warning(f"Found a wrong 'step' (!={exp_step}) for {name} in {full_path}")
+
+    # Due to the issue that step and ref_time is wrong (at last in one file of the archive)
+    # we double check that the valid_time is as expected
+    valid_time = var.coords["valid_time"].values
+    filename = Path(full_path).name.replace("laf" if file_type == "ANA" else "lff", "")
+    if (
+        datetime.utcfromtimestamp(valid_time[0].astype(int) * 1e-9).strftime("%Y%m%d%H")
+        != filename
+    ):
+        raise RuntimeError("Wrong valid time")
+
+    # FG ref time is one hour before ref time of ANA
+    # Therefore we remove these coordinates to avoid misalignment in zarr
+    # We make valid_time the only (aligned) coordinate -> "time"
+    var = var.drop_vars(["ref_time", "time", "valid_time"])
+
+    var = var.assign_coords(
+        {
+            "time": xr.Variable(
+                "time",
+                valid_time,
+                encoding={"units": "hours since 1900-01-01"},
+                # xr.coding.times.decode_cf_datetime(valid_time),
+                # encoding={"dtype": "datetime64[ns]"},
+            )
+        }
+    )
+
+    return var
+
+
 def process_ana_file(full_path: str):
     """Process the analysis file extracting and processing the require variables
 
@@ -472,38 +540,8 @@ def process_ana_file(full_path: str):
 
             if name == "HHL":
                 name = "HFL"
-            if name == "pp":
-                name = "PP"
 
-            # remove z dim for all 2d var in order to be able to create a dataset
-            if "z" in var.sizes and var.sizes["z"] == 1:
-                var = var.squeeze(dim="z")
-
-            # The analysis files should all be generated a 'step' = 0. For unknown reasons,
-            # laf2016031421 was generated with some variables on step 1. This generates variables (P & PP)
-            # with unaligned time coordinates. We can not fix the archive data, so we hack it here.
-            if var.time.values != [0]:
-                var = var.assign_coords({"time": [0]})
-                logger.warning(f"Found a wrong 'step' (!=0) for {name} in {full_path}")
-
-            # Due to the issue that step and ref_time is wrong (at last in one file of the archive)
-            # we double check that the valid_time is as expected
-            filename = Path(full_path).name.replace("laf", "")
-            if (
-                datetime.utcfromtimestamp(valid_time[0].astype(int) * 1e-9).strftime(
-                    "%Y%m%d%H"
-                )
-                != filename
-            ):
-                raise RuntimeError("Wrong valid time")
-
-            # FG ref time is one hour before ref time of ANA
-            # Therefore we remove these coordinates to avoid misalignment in zarr
-            # We make valid_time the only (aligned) coordinate -> "time"
-            valid_time = var.coords["valid_time"].values
-
-            var = var.drop_vars(["ref_time", "time", "valid_time"])
-            var = var.assign_coords({"time": ("time", valid_time)})
+            var = adapt_coords_to_zarr(name, var, full_path, "ANA")
 
             if name == "HFL" or name == "HSURF":
                 var = var.squeeze(dim="time")
@@ -565,14 +603,14 @@ def process_fg_file(full_path: str) -> xr.Dataset:
         )
 
         logger.info(f"Processed first guess file: {full_path}")
-        dset = xr.Dataset(ds)
 
-        # FG ref time is one hour before ref time of ANA
-        # Therefore we remove these coordinates to avoid misalignment in zarr
-        # We make valid_time the only (aligned) coordinate -> "time"
-        dset = dset.drop_vars(["ref_time", "time"])
-        dset = dset.rename({"valid_time": "time"})
-        return dset
+        pdset = {
+            name: adapt_coords_to_zarr(name, var, full_path, "FG")
+            for name, var in ds.items()
+        }
+
+        check_hypercube(pdset)
+        return xr.Dataset(pdset)
 
     except (FileNotFoundError, OSError) as e:
         logger.error(f"Error: {e}")
