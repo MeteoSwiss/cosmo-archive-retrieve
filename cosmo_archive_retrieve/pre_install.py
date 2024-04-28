@@ -4,7 +4,12 @@ import os
 
 def main():
 
-    prefix = os.environ["CONDA_PREFIX"]
+    try:
+        prefix = os.environ["CONDA_PREFIX"]
+    except KeyError:
+        raise RuntimeError(
+            "CONDA_PREFIX is not defined in the environment. It needs to be defined and set to the root of the conda environment."
+        )
     if not os.path.isdir(prefix):
         raise RuntimeError("CONDA prefix does not exists.")
     clone_dir = os.path.join(prefix, "share", "eccodes-cosmo-resources")
