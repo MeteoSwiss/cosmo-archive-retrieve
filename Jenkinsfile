@@ -49,16 +49,15 @@ pipeline {
                 }
             }
         }
-
+        stage('Regex') {
+            steps {
+                sh '''
+                    sed -i "s/service.meteoswiss.ch/hub.meteoswiss.ch/g" pyproject.toml
+                '''
+            }
+        }
         stage('Test') {
             parallel {
-                stage('3.9') {
-                    steps {
-                        script {
-                            runWithPodman.poetryPytest '3.9', false, false
-                        }
-                    }
-                }
                 stage('3.10') {
                     steps {
                         script {
@@ -193,6 +192,10 @@ pipeline {
         success {
             echo 'Build succeeded'
             updateGitlabCommitStatus name: 'Build', state: 'success'
+        }
+        always{
+            echo 'Cleaning up workspace'
+            deleteDir()
         }
     }
 }
