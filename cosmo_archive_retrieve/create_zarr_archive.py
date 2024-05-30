@@ -540,126 +540,6 @@ def process_file(full_path: str, file_type: str):
         logger.error(f"Error: {e}")
 
 
-
-# def process_ana_file(full_path: str):
-#     """Process the analysis file extracting and processing the require variables
-
-#     Parameters
-#     ----------
-#     full_path: str
-#         filename full path to analysis file.
-#     """
-
-#     out_params = {
-#         "T",
-#         "U_10M",
-#         "V_10M",
-#         "U",
-#         "V",
-#         "W",
-#         "PS",
-#         "T_2M",
-#         "QV",
-#         "TQV",
-#         "PMSL",
-#         "FI",
-#         "HSURF",
-#         "PP",
-#         "P0FL",
-#         "RELHUM",
-#         "CLCT",
-#         "W_SNOW",
-#         "TD_2M",
-#     }
-
-#     logger.info(f"Processing analysis file: {full_path}")
-
-#     try:
-#         ds = idpi.grib_decoder.load(
-#             idpi.data_source.DataSource(datafiles=[full_path]),
-#             {
-#                 "param": [
-#                     "T",
-#                     "U_10M",
-#                     "V_10M",
-#                     "U",
-#                     "V",
-#                     "W",
-#                     "PS",
-#                     "T_2M",
-#                     "QV",
-#                     "TQV",
-#                     "PMSL",
-#                     "HHL",
-#                     "HSURF",
-#                     "PP",
-#                     "P",
-#                     "CLCT",
-#                     "W_SNOW",
-#                     "TD_2M",
-#                 ]
-#             },
-#         )
-
-#         idpi.metadata.set_origin_xy(ds, ref_param="T")
-
-#         pdset = {}
-#         for name, var in ds.items():
-
-#             for dim in ["x", "y"]:
-#                 origind = "origin_" + dim
-#                 if origind in var.attrs and var.attrs[origind] != 0.0:
-#                     old_coords = {}
-#                     for coord in ("valid_time", "ref_time"):
-#                         old_coords[coord] = var.coords[coord]
-#                     var = destagger(var, dim)
-#                     var = var.assign_coords(old_coords)
-
-#             if name == "HHL" or name == "W":
-#                 # workaround until the typeOflevel used in the archive is supported (hybrid)
-#                 # https://github.com/MeteoSwiss-APN/icon_data_processing_incubator/issues/131
-#                 var.attrs["origin_z"] = -0.5
-#                 var.attrs["vcoord_type"] = "model_level"
-#                 for coord in ("valid_time", "ref_time"):
-#                     old_coords[coord] = var.coords[coord]
-
-#                 var = destagger(var, "z")
-#                 var = var.assign_coords(old_coords)
-
-#             if name == "HHL":
-#                 name = "HFL"
-
-#             var = adapt_coords_to_zarr(name, var, full_path, "ANA")
-
-#             if name == "HFL" or name == "HSURF":
-#                 var = var.squeeze(dim="time")
-
-#             pdset[name] = var
-
-#         pdset["FI"] = pdset["HFL"] * 9.80665
-#         # P0FL should be a time invariant
-#         pdset["P0FL"] = (pdset["P"] - pdset["PP"]).squeeze(dim="time")
-#         pdset["RELHUM"] = relhum(
-#             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
-#         )
-
-#         logger.info(f"Processed analysis file: {full_path}")
-
-#         check_hypercube(pdset)
-
-#         if not out_params.issubset(pdset):
-#             raise RuntimeError(
-#                 f"Missing output parameter {out_params} in dataset {pdset.keys()}"
-#             )
-#         # Return only the fields in out_params
-#         dset = xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
-
-#         return dset
-
-#     except (FileNotFoundError, OSError) as e:
-#         logger.error(f"Error: {e}")
-
-
 def process_fg_file(full_path: str) -> xr.Dataset:
     """Process the first guess file extracting and processing the require variables
 
@@ -704,86 +584,6 @@ def process_fg_file(full_path: str) -> xr.Dataset:
         logger.error(f"Error: {e}")
 
 
-# def process_forecast_file(full_path: str):
-#     """Process the forecast file extracting and processing the require variables
-
-#     Parameters
-#     ----------
-#     full_path: str
-#         filename full path to analysis file.
-#     """
-
-
-#     out_params = constants.FORECAST_PARAMS
-
-#     logger.info(f"Processing forecast file: {full_path}")
-
-#     try:
-#         ds = idpi.grib_decoder.load(
-#             idpi.data_source.DataSource(datafiles=[full_path]),
-#             {
-#                 "param": list(constants.FORECAST_PARAMS)
-#             },
-#         )
-
-#         idpi.metadata.set_origin_xy(ds, ref_param="T")
-
-#         pdset = {}
-#         for name, var in ds.items():
-
-#             for dim in ["x", "y"]:
-#                 origind = "origin_" + dim
-#                 if origind in var.attrs and var.attrs[origind] != 0.0:
-#                     old_coords = {}
-#                     for coord in ("valid_time", "ref_time"):
-#                         old_coords[coord] = var.coords[coord]
-#                     var = destagger(var, dim)
-#                     var = var.assign_coords(old_coords)
-
-#             if name == "HHL" or name == "W":
-#                 # workaround until the typeOflevel used in the archive is supported (hybrid)
-#                 # https://github.com/MeteoSwiss-APN/icon_data_processing_incubator/issues/131
-#                 var.attrs["origin_z"] = -0.5
-#                 var.attrs["vcoord_type"] = "model_level"
-#                 for coord in ("valid_time", "ref_time"):
-#                     old_coords[coord] = var.coords[coord]
-
-#                 var = destagger(var, "z")
-#                 var = var.assign_coords(old_coords)
-
-#             if name == "HHL":
-#                 name = "HFL"
-
-#             var = adapt_coords_to_zarr(name, var, full_path, "FG")
-
-#             if name == "HFL" or name == "HSURF":
-#                 var = var.squeeze(dim="time")
-
-#             pdset[name] = var
-
-#         pdset["FI"] = pdset["HFL"] * 9.80665
-#         # P0FL should be a time invariant
-#         pdset["P0FL"] = (pdset["P"] - pdset["PP"]).squeeze(dim="time")
-#         pdset["RELHUM"] = relhum(
-#             pdset["QV"], pdset["T"], pdset["P"], clipping=True, phase="water"
-#         )
-
-#         logger.info(f"Processed analysis file: {full_path}")
-
-#         check_hypercube(pdset)
-
-#         if not out_params.issubset(pdset):
-#             raise RuntimeError(
-#                 f"Missing output parameter {out_params} in dataset {pdset.keys()}"
-#             )
-#         # Return only the fields in out_params
-#         dset = xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
-
-#         return dset
-
-#     except (FileNotFoundError, OSError) as e:
-#         logger.error(f"Error: {e}")
-
 if __name__ == "__main__":
 
     logging.basicConfig(level=logging.INFO)
@@ -800,7 +600,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o",
         type=str,
-        default= "/users/clechart/cosmo-archive-retrieve/cosmo_archive_retrieve",
+        default = os.path.join("/scratch", os.environ["USER"], "neural-lam/zarr/cosmo_ml_data.zarr")
     )
     parser.add_argument(
         "-f",
@@ -813,7 +613,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     data_config = {
-        "data_path": "/users/clechart/cosmo-archive-retrieve/input",
+        "data_path": "/store/archive/mch/msopr/owm/KENDA",
         "train_years": ["15", "16", "17", "18", "19", "20"],
         "zarr_path": args.o,
         "file_type": args.file_type,
