@@ -805,10 +805,10 @@ if __name__ == "__main__":
     parser.add_argument(
         "-f",
         "--file_type",
-        choices=["ANA", "LG"],
+        choices=["ANA", "FG"],
         type=str,
         required=True,
-        help="Specify the file type: ANA or LG"
+        help="Specify the file type: ANA or FG"
     )
     args = parser.parse_args()
 
