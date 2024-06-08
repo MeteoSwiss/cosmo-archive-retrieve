@@ -241,14 +241,18 @@ def process_tar_file(
         for index, (ana_full_path, fg_full_path) in enumerate(
             zip(group_ana_files, group_fg_files)
         ):
-            analysis_datasets = process_ana_file(ana_full_path)
-            first_guess_datasets = process_fg_file(fg_full_path)
+            shutil.copy(ana_full_path, "/scratch/cosuna/mldata")
+            shutil.copy(fg_full_path, "/scratch/cosuna/mldata")
 
-            serialize_dataset(
-                first_guess_datasets.merge(analysis_datasets),
-                first_leadtime + first_leadtime_of_day + index,
-                outdir,
-            )
+#            analysis_datasets = process_ana_file(ana_full_path)
+
+#            first_guess_datasets = process_fg_file(fg_full_path)
+
+#            serialize_dataset(
+#                first_guess_datasets.merge(analysis_datasets),
+#                first_leadtime + first_leadtime_of_day + index,
+#                outdir,
+#            )
 
 
 def get_archive_filenames_list(config: dict) -> list[str]:
@@ -641,7 +645,8 @@ if __name__ == "__main__":
 
     data_config = {
         "data_path": "/store/archive/mch/msopr/owm/KENDA",
-        "train_years": ["15", "16", "17", "18", "19", "20"],
+        "train_years": ["17"],       
+#        "train_years": ["15", "16", "17", "18", "19", "20"],
         "zarr_path": args.o,
         "n_pool": args.n,
         "tempdir": args.tempdir,
