@@ -24,10 +24,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Literal
 
-import idpi
-from idpi import metadata, data_source, grib_decoder
-from idpi.operators.destagger import destagger
-from idpi.operators.relhum import relhum
+import meteodatalab as mdl
+from meteodatalab import metadata, data_source, grib_decoder
+from meteodatalab.operators.destagger import destagger
+from meteodatalab.operators.relhum import relhum
 
 logger = logging.getLogger(__name__)
 
@@ -62,7 +62,6 @@ def load_data(config: dict) -> None:
     fg_files_list = sorted(fg_files_list)
 
 
-    print("FFF", files_list[0:120])
     for ana_file, fg_file in zip(files_list[0:120], fg_files_list[0:120]):
         analysis_datasets = process_ana_file(ana_file, config)
         first_guess_datasets = process_fg_file(fg_file, config)
@@ -179,8 +178,8 @@ def process_ana_file(full_path: str, config):
     logger.info(f"Processing analysis file: {full_path}")
 
     try:
-        ds = idpi.grib_decoder.load(
-            idpi.data_source.DataSource(datafiles=[full_path]),
+        ds = mdl.grib_decoder.load(
+            mdl.data_source.DataSource(datafiles=[full_path]),
             {
                 "param": [
                     "T",
@@ -205,7 +204,7 @@ def process_ana_file(full_path: str, config):
             },
         )
 
-        idpi.metadata.set_origin_xy(ds, ref_param="T")
+        mdl.metadata.set_origin_xy(ds, ref_param="T")
 
         pdset = {}
         for name, var in ds.items():
@@ -218,8 +217,9 @@ def process_ana_file(full_path: str, config):
                         old_coords[coord] = var.coords[coord]
                     var = destagger(var, dim)
                     var = var.assign_coords(old_coords)
+
                     var.attrs |= metadata.override( var.message, latitudeOfFirstGridPointInDegrees = -4.42)
-                    var.attrs |= metadata.override( var.message, longitudeOfFirstGridPointInDegrees = -6.81)
+                    var.attrs |= metadata.override( var.message, longitudeOfFirstGridPointInDegrees = -6.82)
                     var.attrs |= metadata.override( var.message, latitudeOfLastGridPointInDegrees = 3.36)
                     var.attrs |= metadata.override( var.message, longitudeOfLastGridPointInDegrees = 4.8)
                     var.attrs |= metadata.override( var.message, jDirectionIncrementInDegrees = 0.02)
@@ -283,9 +283,9 @@ def process_ana_file(full_path: str, config):
                     grib_decoder.save(var, tmp)
 
         # Return only the fields in out_params
-        dset = xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
+#        dset = xr.Dataset({x: y for x, y in pdset.items() if x in out_params})
 
-        return dset
+#        return dset
 
     except (FileNotFoundError, OSError) as e:
         logger.error(f"Error: {e}")
@@ -301,8 +301,8 @@ def process_fg_file(full_path: str, config) -> xr.Dataset:
 
     """
     try:
-        ds = idpi.grib_decoder.load(
-            idpi.data_source.DataSource(datafiles=[full_path]),
+        ds = mdl.grib_decoder.load(
+            mdl.data_source.DataSource(datafiles=[full_path]),
             {
                 "param": [
                     "TOT_PREC",
@@ -361,7 +361,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o",
         type=str,
-        default="/scratch/cosuna/mldata/ml_proc_2017_2/",
+        default="/scratch/cosuna/mldata/ml_proc_t/",
     )
 
     args = parser.parse_args()

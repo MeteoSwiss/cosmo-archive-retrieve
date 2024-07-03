@@ -21,7 +21,7 @@ url = "https://service.meteoswiss.ch/nexus/repository/python-mch/"
 python = ">=3.10,<3.12"
 numcodecs = "*"
 zarr = "*"
-idpi = { git = "https://github.com/MeteoSwiss-APN/icon_data_processing_incubator.git", branch = "main" }
+meteodatalab = { git = "https://github.com/MeteoSwiss/meteodata-lab.git", rev = "16f3badb1c5edb09efc8529c1b6ba27f88c3bc8c" }
 
 [tool.poetry.scripts]
 pre-install = "cosmo_archive_retrieve.pre_install:main"

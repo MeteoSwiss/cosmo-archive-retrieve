@@ -24,10 +24,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Literal
 
-import idpi
-from idpi import metadata, data_source, grib_decoder
-from idpi.operators.destagger import destagger
-from idpi.operators.relhum import relhum
+import meteodatalab as mdl
+from meteodatalab import metadata, data_source, grib_decoder
+from meteodatalab.operators.destagger import destagger
+from meteodatalab.operators.relhum import relhum
 
 logger = logging.getLogger(__name__)
 
@@ -180,8 +180,8 @@ def process_ana_file(full_path: str, config):
     logger.info(f"Processing analysis file: {full_path}")
 
     try:
-        ds = idpi.grib_decoder.load(
-            idpi.data_source.DataSource(datafiles=[full_path]),
+        ds = mdl.grib_decoder.load(
+            mdl.data_source.DataSource(datafiles=[full_path]),
             {
                 "param": [
                     "T",
@@ -206,7 +206,7 @@ def process_ana_file(full_path: str, config):
             },
         )
 
-        idpi.metadata.set_origin_xy(ds, ref_param="T")
+        mdl.metadata.set_origin_xy(ds, ref_param="T")
 
         pdset = {}
         for name, var in ds.items():
@@ -296,8 +296,8 @@ def process_fg_file(full_path: str, config) -> xr.Dataset:
 
     """
     try:
-        ds = idpi.grib_decoder.load(
-            idpi.data_source.DataSource(datafiles=[full_path]),
+        ds = mdl.grib_decoder.load(
+            mdl.data_source.DataSource(datafiles=[full_path]),
             {
                 "param": [
                     "TOT_PREC",
@@ -356,7 +356,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o",
         type=str,
-        default="/scratch/cosuna/mldata/ml_proc/",
+        default="/scratch/cosuna/mldata/ml_proc_t/",
     )
 
     args = parser.parse_args()
